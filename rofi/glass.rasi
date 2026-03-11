@@ -1,0 +1,111 @@
+* {
+  background-color: transparent;
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+configuration {
+  drun {
+    display-name: "";
+  }
+
+  run {
+    display-name: "";
+  }
+
+  window {
+    display-name: "";
+  }
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+prompt {
+  padding: 10px;
+  text-color: @fg0;
+}
+
+
+prompt {
+  enabled: false;
+}
+
+
+* {
+  bg0: #282c34;
+  bg1: #32363e;
+  fg0: #abb2bf;
+  fg1: #5c6370;
+
+  red: #e06c75;
+  red-trans: #e06c7515;
+  green: #98c379;
+  green-trans: #98c37915;
+  yellow: #e5c07b;
+  yellow-trans: #e5c07b15;
+  blue: #61afef;
+  blue-trans: #61afef15;
+  purple: #c678dd;
+  purple-trans: #c678dd15;
+  aqua: #56b6c2;
+  aqua-trans: #56b6c215;
+}
+
+
+window {
+  background-color: @bg0;
+  border: 2px;
+  border-color: @bg1;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+inputbar {
+  margin: 0 0 6px 0;
+}
+
+entry {
+  padding: 10px;
+  text-color: @fg0;
+}
+
+listview {
+  lines: 10;
+  scrollbar: true;
+}
+
+scrollbar {
+  background-color: @bg1;
+  border-radius: 6px;
+  handle-color: @fg0;
+  handle-width: 6px;
+  margin: 0 0 0 6px;
+}
+
+element {
+  border: 2px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+element selected {
+  background-color: @bg1;
+  border-color: @fg1;
+}
+
+element-text {
+  text-color: @fg1;
+}
+
+element-text selected {
+  text-color: @fg0;
+}
